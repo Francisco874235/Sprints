@@ -153,7 +153,7 @@ UIS.InputBegan:Connect(function(key, gameProcessed)
 
 		if stamina == 0 then
 			-- Cooldown
-			firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent,"You're exhausted.")
+			firesignal(game:GetService("ReplicatedStorage").EntityInfo.Caption.OnClientEvent, "Dev Troll started",true,5)
 			local noStamernaSound = Instance.new("Sound",workspace)
 			noStamernaSound.SoundId = "rbxassetid://8258601891"
 			noStamernaSound.Volume = 0.8
